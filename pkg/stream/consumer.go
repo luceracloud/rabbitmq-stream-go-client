@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	logs "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
+	logs "github.com/luceracloud/rabbitmq-stream-go-client/pkg/logs"
 )
 
 type Consumer struct {

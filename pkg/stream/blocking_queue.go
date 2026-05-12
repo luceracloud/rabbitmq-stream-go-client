@@ -5,7 +5,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/logs"
 )
 
 var ErrBlockingQueueStopped = errors.New("blocking queue stopped")

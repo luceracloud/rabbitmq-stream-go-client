@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/stream"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/stream"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/exporters/stdout/stdoutmetric"
 	"go.opentelemetry.io/otel/sdk/metric"

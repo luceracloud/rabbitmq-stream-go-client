@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
 	"github.com/onsi/gomega/types"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
 )
 
 type MessageDataMatcher struct {

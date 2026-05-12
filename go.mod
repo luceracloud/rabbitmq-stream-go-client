@@ -1,4 +1,4 @@
-module github.com/rabbitmq/rabbitmq-stream-go-client
+module github.com/luceracloud/rabbitmq-stream-go-client
 
 go 1.25.0
 

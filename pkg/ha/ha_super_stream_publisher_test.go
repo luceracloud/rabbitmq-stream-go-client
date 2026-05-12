@@ -5,14 +5,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
-	test_helper "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/test-helper"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/message"
+	test_helper "github.com/luceracloud/rabbitmq-stream-go-client/pkg/test-helper"
 
 	"github.com/google/uuid"
+	. "github.com/luceracloud/rabbitmq-stream-go-client/pkg/stream"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	. "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/stream"
 )
 
 var _ = Describe("Reliable Super Stream Producer", func() {

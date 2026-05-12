@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
 )
 
 type Coordinator struct {

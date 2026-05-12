@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/stream"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/stream"
 	"github.com/spf13/cobra"
 )
 

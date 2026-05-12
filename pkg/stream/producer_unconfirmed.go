@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/logs"
 )
 
 // unConfirmed is a structure that holds unconfirmed messages

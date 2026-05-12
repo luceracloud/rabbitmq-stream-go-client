@@ -3,8 +3,8 @@ package stream
 import (
 	"strconv"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/message"
 )
 
 const MessageBufferTooBig = 1148001

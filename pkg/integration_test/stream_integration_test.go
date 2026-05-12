@@ -6,13 +6,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/message"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	stream "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/stream"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
+	stream "github.com/luceracloud/rabbitmq-stream-go-client/pkg/stream"
 )
 
 var _ = Describe("StreamIntegration", func() {

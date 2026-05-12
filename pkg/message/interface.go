@@ -1,6 +1,6 @@
 package message
 
-import "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
+import "github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
 
 // StreamMessage is the interface that wraps the basic methods to interact with a message
 // in the context of a stream.
