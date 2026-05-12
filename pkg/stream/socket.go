@@ -5,7 +5,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/logs"
 )
 
 type socket struct {

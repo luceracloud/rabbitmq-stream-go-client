@@ -6,12 +6,12 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/message"
+	. "github.com/luceracloud/rabbitmq-stream-go-client/pkg/stream"
+	test_helper "github.com/luceracloud/rabbitmq-stream-go-client/pkg/test-helper"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
-	. "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/stream"
-	test_helper "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/test-helper"
 )
 
 var _ = Describe("Reliable Producer", func() {

@@ -8,12 +8,12 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/message"
+	test_helper "github.com/luceracloud/rabbitmq-stream-go-client/pkg/test-helper"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/pkg/errors"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
-	test_helper "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/test-helper"
 )
 
 var _ = Describe("Streaming Consumers", func() {

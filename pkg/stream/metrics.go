@@ -25,7 +25,7 @@ type streamMetrics struct {
 // https://pkg.go.dev/go.opentelemetry.io/otel/metric@v1.39.0#MeterProvider
 
 // RabbitMQStreamClientMeterName is the name of the meter for the RabbitMQ Stream Go Client.
-const RabbitMQStreamClientMeterName = "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/stream"
+const RabbitMQStreamClientMeterName = "github.com/luceracloud/rabbitmq-stream-go-client/pkg/stream"
 
 func newStreamMetrics(mp metric.MeterProvider) (*streamMetrics, error) {
 	m := mp.Meter(RabbitMQStreamClientMeterName,

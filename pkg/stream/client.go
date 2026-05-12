@@ -16,7 +16,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/logs"
 	"go.opentelemetry.io/otel/attribute"
 	semconv "go.opentelemetry.io/otel/semconv/v1.39.0"
 )

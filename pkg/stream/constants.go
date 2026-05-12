@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/logs"
 	"github.com/pkg/errors"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
 )
 
 // is needed to indicate the general status

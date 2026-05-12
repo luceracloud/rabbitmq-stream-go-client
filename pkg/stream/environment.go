@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/logs"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/metric"
 )

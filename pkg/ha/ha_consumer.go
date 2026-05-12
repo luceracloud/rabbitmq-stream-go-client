@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/stream"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/stream"
 )
 
 // ReliableConsumer is a consumer that can reconnect in case of connection problems

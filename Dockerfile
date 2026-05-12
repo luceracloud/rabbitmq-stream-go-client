@@ -1,6 +1,6 @@
 FROM golang:1.26 AS builder
 ENV GOPATH=/go GOOS=linux CGO_ENABLED=0
-WORKDIR /go/src/github.com/rabbitmq/rabbitmq-stream-go-client
+WORKDIR /go/src/github.com/luceracloud/rabbitmq-stream-go-client
 COPY go.mod go.sum VERSION ./
 COPY pkg pkg
 COPY Makefile Makefile

@@ -6,12 +6,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/luceracloud/rabbitmq-stream-go-client/pkg/message"
+	test_helper "github.com/luceracloud/rabbitmq-stream-go-client/pkg/test-helper"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
-	test_helper "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/test-helper"
 )
 
 type TestingRandomStrategy struct {
