@@ -25,11 +25,6 @@ import (
 // set => Args["stream-max-segment-size-bytes"] = $"{value}";
 //}
 
-const maxAge = "max-age"
-const maxLengthBytes = "max-length-bytes"
-const queueLeaderLocator = "queue-leader-locator"
-const streamMaxSegmentSizeBytes = "stream-max-segment-size-bytes"
-
 type SuperStreamOptions interface {
 	getPartitions(prefix string) []string
 	getBindingKeys() []string
@@ -41,7 +36,7 @@ type PartitionsOptions struct {
 	MaxAge              time.Duration
 	MaxLengthBytes      *ByteCapacity
 	MaxSegmentSizeBytes *ByteCapacity
-	LeaderLocator       string
+	LeaderLocator       LeaderLocator
 	args                map[string]string
 }
 
@@ -104,7 +99,7 @@ func (t *PartitionsOptions) getArgs() map[string]string {
 		t.args[streamMaxSegmentSizeBytes] = fmt.Sprintf("%d", t.MaxSegmentSizeBytes.bytes)
 	}
 	if t.LeaderLocator != "" {
-		t.args[queueLeaderLocator] = t.LeaderLocator
+		t.args[queueLeaderLocator] = string(t.LeaderLocator)
 	}
 	return t.args
 }
@@ -114,7 +109,7 @@ type BindingsOptions struct {
 	MaxAge              time.Duration
 	MaxLengthBytes      *ByteCapacity
 	MaxSegmentSizeBytes *ByteCapacity
-	LeaderLocator       string
+	LeaderLocator       LeaderLocator
 	args                map[string]string
 }
 
@@ -173,7 +168,7 @@ func (t *BindingsOptions) getArgs() map[string]string {
 		t.args[streamMaxSegmentSizeBytes] = fmt.Sprintf("%d", t.MaxSegmentSizeBytes.bytes)
 	}
 	if t.LeaderLocator != "" {
-		t.args[queueLeaderLocator] = t.LeaderLocator
+		t.args[queueLeaderLocator] = string(t.LeaderLocator)
 	}
 	return t.args
 }
