@@ -114,18 +114,21 @@ const (
 	defaultConfirmationTimeOut  = 10 * time.Second
 	//
 
-	ZombieConsumer           = "zombie-consumer"
-	SocketClosed             = "socket client closed"
-	MetaDataUpdate           = "metadata Data update"
-	LeaderLocatorBalanced    = "balanced"
-	LeaderLocatorClientLocal = "client-local"
-	DeletePublisher          = "deletePublisher"
-	UnSubscribe              = "unSubscribe"
+	ZombieConsumer  = "zombie-consumer"
+	SocketClosed    = "socket client closed"
+	MetaDataUpdate  = "metadata Data update"
+	DeletePublisher = "deletePublisher"
+	UnSubscribe     = "unSubscribe"
 
 	StreamTcpPort = "5552"
 
 	subscriptionPropertyFilterPrefix    = "filter."
 	subscriptionPropertyMatchUnfiltered = "match-unfiltered"
+
+	maxAge                    = "max-age"
+	maxLengthBytes            = "max-length-bytes"
+	queueLeaderLocator        = "queue-leader-locator"
+	streamMaxSegmentSizeBytes = "stream-max-segment-size-bytes"
 )
 
 var AlreadyClosed = errors.New("Already Closed")
